@@ -128,12 +128,21 @@
 
     <!-- Opt in section -->
 
-    <section>
+  <section id="optin">
+     <div class="container">
+         <div class="row">
+              <div class="col-sm-8">
+                 <p class="lead"><strong>Subscribe to our mailing list.</strong>
+                 We'll send something special as a thank you.</p>
+              </div>
 
-     "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences
-      that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-
-    </section>
+              <div class="col-sm-4">
+                   <button type="button" class="btn btn-success btn-lg btn-block" name="button" data-
+                   toggle="modal data-target="#myModal>Click here to subscribe</button>
+              </div>
+         </div>
+     </div>
+  </section>
 
 <!-- Boost your Income -->
 <section>
@@ -185,15 +194,51 @@
 
 <!-- Modal-->
 
-<div class="">
+<div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="myModalLabel" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
 
-</div>
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe to our Mailing List</h4>
+				</div><!-- modal-header -->
+
+				<div class="modal-body">
+					<p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of our best-selling courses, <em>for free!</em></p>
+
+					<form class="form-inline" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="subscribe-name">Your first name</label>
+							<input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="subscribe-email">and your email</label>
+							<input type="text" class="form-control" id="subscribe-email" placeholder="and your email">
+						</div>
+						<input type="submit" class="btn btn-danger" value="Subscribe!">
+					</form>
+
+					<hr>
+
+					<p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletters. <br>No Spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+				</div><!-- modal-body -->
+
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- modal -->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
   </script>
 
     <script src="assets/js/jquery-3.2.1.min.js"></script>
+<!-- <script type="assets/js/bootstrap.min.js"> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</script>
+
+    </script>
+
        <script src="assets/js/main.js"></script>
   </body>
 </html>
