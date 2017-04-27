@@ -5,12 +5,12 @@ $(function(){
   $('section[data-type="background"]').each(function(){
 
     var $bgobj = $(this); // assigning the object
-    &(window).scroll(function(){
+    (window).scroll(function(){
 
      //scroll the background at var speed
      //the yPos is a negative value because we're scrolling it up
 
-    var y Pos = -$(window.scrollTop() /
+    var yPos = -$(window.scrollTop() /
     $bgobj.data('speed'));
 
     var coords = '50%' + yPos + 'px';
