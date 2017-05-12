@@ -42,6 +42,24 @@ h4{
   font-size: 18px;
 }
 
+p {
+  margin: 0 0 15px;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
+a:link, a:visited {
+  color: #dd5638;
+}
+
+
+a:hover{
+  text-decoration: none;
+  color: #c9302c;
+}
+
 button, input, .btn, a.btn {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -51,6 +69,20 @@ button, input, .btn, a.btn {
 .btn-danger {
   background-color:  #dd5638;
   border-collapse: #d95131;
+}
+
+.btn-success {
+  background: #79b044;
+  border: none;
+
+}
+
+.btn-success:hover {
+  background: #6a9b3d;
+  border-color: #6a9b3d;
+}
+ button.btn:focus {
+  outline: none !important;
 }
 
 img {
@@ -88,6 +120,23 @@ img {
   background: #db4b39;
 }
 
+blockqoute {
+  padding: 0;
+  border: none;
+  font-style: italic;
+  text-align: left;
+
+}
+
+blockquote cite {
+  display: block;
+  color: #777;
+  margin: 15px 0 0 0;
+}
+
+blockquote:before {
+  display: none;
+}
 
 
 #hero {
@@ -155,6 +204,10 @@ img {
 }
 
 /*layout */
+
+.row + .row {
+  margin-top: 20px;
+}
 
 section{
   padding: 80px 0;
@@ -244,7 +297,70 @@ section h3 {
   font-weight: normal;
 }
 
+#kudos {
+  text-align: center;
+}
 
+.testimonial {
+  margin-bottom: 60px;
+}
+
+
+.testimonial img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#signup {
+  text-align: center;
+  background: url("../img/hipster-stuff.jpg") center center repeat repeat fixed;
+  background: cover;
+  color: white;
+  padding: 140px 0;
+
+
+}
+
+#signup h2 {
+  font weight: normal;
+}
+
+#signup h2 strong {
+  border-bottom: solid 2px #dd5638;
+}
+
+#signup .btn {
+  font-size: 24px;
+}
+
+footer {
+  background: #3e4249;
+  color: white;
+  padding: 20px 0 10px;
+  font-size: 12px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a:link, footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: #dd5638;
+
+}
+
+footer li.signup-link a {
+  color: #dd5638;
+}
+
+footer li.sign-up-link a:hover {
+font-weight: bold;
+}
 
 /* == CUSTOM ICON SPRITES == */
 
@@ -261,3 +377,40 @@ i.ci {
 .ci.ci-community     {background-position: -120px 0;}
 .ci.ci-instructor     {background-position: -160px 0;}
 .ci.ci-device     {background-position: -200px 0;}
+
+/*Media Queries*/
+
+@media screen and (max-width : 991px) {
+  #instructor .container {
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .logo {
+    width: 50%;
+  }
+
+  #optin p {
+    margin: 0 0 10px;
+  }
+
+  #featurette iframe {
+    height: 240px;
+  }
+
+
+}
+
+@media screen and (max-width : 568px) {
+  #instructor .num {
+    height: 100px;
+    width: 100px;
+    font-size: 22px;
+  }
+
+  #instructor .num span {
+    font-size: 16px;
+  }
+}
